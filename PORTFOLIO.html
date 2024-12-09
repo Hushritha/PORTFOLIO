@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: pink;
+      background-color: skyblue;
+    }
+
+    /* Header Styles */
+    header {
+      background: black;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+    }
+
+    /* Navigation Styles */
+    nav {
+      background: grey;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+    }
+
+    /* Section Styles */
+    .section {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      margin-bottom: 1rem;
+    }
+
+    /* Project Styles */
+    .projects {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .project {
+      background: black;
+      padding: 1rem;
+      border: 1px solid green;
+      width: 250px;
+      border-radius: 5px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    /* Form Styles */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    form input, form textarea, form button {
+      padding: 0.5rem;
+      border: 1px solid green;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: black;
+      border: white
+    }
+
+    /* Footer Styles */
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Hi, I'm Hushritha</h1>
+      <p>Web Developer | Designer | Programmer</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I'm a passionate web developer with experience in HTML, CSS, and JavaScript. I love creating user-friendly and beautiful websites.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Description of your first project.</p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Description of your second project.</p>
+      </div>
+      <div class="project">
+        <h3>Project 3</h3>
+        <p>Description of your third project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out!</p>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="your name" required>
+      <input type="email" name="email" placeholder="your mail" required>
+      <textarea name="message" placeholder="your message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+  </footer>
+</body>
+</html>
